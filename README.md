@@ -1,16 +1,36 @@
-# bdyandlab
+Developed by [Ayeshaa-Aslam](https://github.com/Ayeshaa-Aslam)
 
-A new Flutter project.
+Flutter Pexels Image Gallery App
+A Flutter application that displays curated images from the [Pexels API](https://www.pexels.com/api/) in a responsive grid layout. Users can load more images with pagination and view them in higher resolution.
 
-## Getting Started
+Features
+1. Fetches curated images from the Pexels API.
+2. Displays images in a responsive 3-column grid
+3. Tap on any image to open it in a new screen (with full resolution)
+4. Load more images with a single tap
+5. Set image as a wallpaper
 
-This project is a starting point for a Flutter application.
+Requirements
+1. Flutter SDK
+2. Dart SDK (comes with Flutter)
+3. Android Studio or Visual Studio Code (for debugging & running)
+4. A valid **Pexels API Key**
 
-A few resources to get you started if this is your first Flutter project:
+Pexels API Key Setup
+1. Go to [https://www.pexels.com/api/](https://www.pexels.com/api/) and sign up or log in.
+2. Generate your API key.
+3. In the Flutter project, open `pexels.dart`.
+4. Replace the value in this line:
+   ```dart
+   headers: {
+     'Authorization': 'YOUR_API_KEY_HERE'
+   }
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Follow these steps to run the app locally
+1. git clone https://github.com/Ayeshaa-Aslam/Flutter-Pexels-Image-Gallery-App
+2. cd pexels_flutter_app
+3. Install Dependencies
+   flutter pub get
+   flutter run
+4. You can use a physical device or emulator.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
